@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Car Rental",
+        "description": "Web-based platform that allows users to search, book, and manage car rentals from various providers",
+        "imgUrl": "/assets/Ecomerce.jpg"
+    },
+    {
+        "title": "Youtube",
+        "description": "Design & Development",
+        "imgUrl": "/assets/Ecomerce.jpg"
+    },
+    {
+        "title": "EComerce",
+        "description": "Design & Development",
+        "imgUrl": "/assets/Ecomerce.jpg"
+    },
+    {
+        "title": "Gym Website",
+        "description": "Design & Development",
+        "imgUrl": "/assets/Ecomerce.jpg"
+    },
+    {
+        "title": "Maintenance",
+        "description": "Update coming soon",
+        "imgUrl": "/assets/Ecomerce.jpg"
+    }
+]
