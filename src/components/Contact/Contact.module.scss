@@ -1,0 +1,116 @@
+@import '../../styles/variaveis';
+
+.contact{
+    background: url('../../assets/img/pxfuel.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact_info{
+    flex-basis: 35%;
+}
+.contact_info p {
+    font-size: 2rem;
+}
+.subTitle{
+    font-weight: 600;
+    font-size: 5rem;
+    border-top: 10px;
+}
+.subTitle span{
+    color: $--main-color;
+}
+.socialNetwork{
+    position: absolute;
+    margin-top: 15px;
+    width: 170px;
+    display: flex;
+    align-items: start;
+}
+.socialNetwork  .network{
+    display: inline-flex;
+    width: 4rem;
+    height: 40px;
+    background: transparent;
+    margin: 0 10px 0 0;
+}
+.form_field{
+    flex-basis: 60%;
+}
+.form_field .form_complements{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+.form_complements div {
+    width: 48%;
+}
+.form_complements input{
+    width:100%;
+    border: 0;
+    outline: none;
+    background-color: #262626;
+    padding: 15px;
+    color: $--text-color;
+    font-size: 1.8rem;
+}
+.text_input {
+    width: 100%;
+    margin-top: 2rem;
+}
+.text_input textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: #262626;
+    padding: 15px;
+    color: $--text-color;
+    font-size: 1.8rem;
+}
+.successMsg{
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-start;
+}
+.btn{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 5.5rem;
+    margin-top: 2rem;
+    background-color: #af75fd;
+    border: 0.2rem solid #af75fd;
+    border-radius: 0.8rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.success { 
+    color: #05f705;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.danger {
+    color: #fc0404;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
