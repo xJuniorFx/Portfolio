@@ -1,0 +1,23 @@
+@import '../../styles/variaveis';
+
+.projects{
+    background: $--second-bg-color;
+    padding: 80px 80px 20px;
+    
+    
+}
+
+.title{
+    font-weight: 600;
+    font-size: 5.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.title span{
+    color: $--main-color;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
