@@ -1,48 +1,62 @@
 @import '../../styles/variaveis';
 
 .about{
-    padding: 80px 80px 20px;
-    background-color: $--second-bg-color;
+    padding-top: 8rem;
+    background-color: $--bg-color;
     
 }
+.about__container{
+   display: grid;
+   grid-template-columns: 35% 50%;
+   gap: 15%;
+   width: $--container-width-lg;
+   margin: 0 auto;
 
-.row{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    
 }
-.aboutImg{
-    flex-basis: 40%;
-    display: flex;
-    align-items: center;
+.about__me{
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+    display: grid;
+    place-items: center;
 }
-.aboutImg img{ 
-    border-radius: 15px;
+.about__me_image{ 
+    border-radius: 2rem;
 }
-.aboutContent{
+.image__alternative{
+    display: none;
+}
+.about__content{
     flex-basis: 60%;
 }
-.aboutContent h1{
+.title{
+    display: flex;
+    justify-content: center;
+}
+.title h1{
     font-weight: 600;
     font-size: 5rem;
 }
-.aboutContent h1 span{
+.title h1 span{
     color: $--main-color;
 }
-.aboutContent p{
+.about__content p{
     font-weight: 400;
     font-size: 1.7rem;
     padding-bottom: 2rem;
 }
 .subTitle{
+    display: flex;
+    justify-content: center;
     font-weight: 600;
     font-size: 3rem;
     border-top: 10px;
-    border-bottom: 4px solid $--main-color;
+    border-bottom: 4px solid $--bg-color-variant;
 }
+
 .technologies{
     display: flex;
+    justify-content: center;
     margin-top: 10px;
 }
 .technologies img{
@@ -51,3 +65,67 @@
     align-self: left;
     padding-right: 10px;
 }
+
+/* ============ Media Queries (MEDIUM DEVICES)============ */
+
+@media only screen and (max-width: 1024px) {
+    .about{
+        padding-top: 4rem;
+    }
+    .about__container{
+        width: $--container-width-md;
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+    .about__me{
+        aspect-ratio: auto;
+        margin: 2rem auto 0 ;
+    }
+
+}
+
+/* ============ Media Queries (SMALL DEVICES)============ */
+
+@media only screen and (max-width: 600px) {
+    .about__container{
+        width: $--container-width-sm;
+    }
+    .title h1{
+        font-size: 3.2rem;
+    }
+    .about__content p {
+        font-size: 1.5rem;
+    }
+    .subTitle {
+        font-size: 3.2rem;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .about{
+        padding-top: 0;
+        width: 100%;
+    }
+    .about__container {
+        width: 100%;
+    }
+    .about__content{
+        width: 100%;
+    }
+    .about__content p{
+        width: 100%;
+        padding: 0 9%;
+    }
+   
+}
+@media only screen and (max-width: 375px) {
+    .image{
+        display: none;
+    }
+    .image__alternative{
+        display: block;
+    }
+    
+}
+
+

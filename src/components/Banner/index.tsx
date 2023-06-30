@@ -2,9 +2,6 @@
 import github from '../../assets/img/github.svg'
 import linkedin from '../../assets/img/linkedin.svg'
 import styles from './Banner.module.scss'
-import imgBanner from '../../assets/img/background3.jpg'
-
-
 
 
 const Banner = ()=> {
@@ -28,8 +25,8 @@ const Banner = ()=> {
                         <a href='#contact' className={styles.anchor}>Contact</a>
                     </div>
                     <div className={styles.socialNetwork}>
-                        <a href='https://github.com/xJuniorFx' target="_blank"><img className={styles.network} src={github}></img></a>
-                        <a href='https://www.linkedin.com/in/juniorfs/' target="_blank"><img className={styles.network} src={linkedin} ></img></a>
+                        <a href='https://github.com/xJuniorFx' target="_blank" rel="noreferrer"><img className={styles.network} alt='Github logo' src={github}></img></a>
+                        <a href='https://www.linkedin.com/in/juniorfs/' target="_blank" rel="noreferrer"><img className={styles.network} alt='Github logo' src={linkedin} ></img></a>
                     </div>
                     
                     <span className={styles.homeHover}></span>

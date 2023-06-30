@@ -1,10 +1,10 @@
 @import '../../styles/variaveis';
 
 .contact{
-    background: url('../../assets/img/pxfuel.jpg') no-repeat;
+    background: $--bg-color;
     background-size: cover;
     background-position: center;
-    align-items: center;
+    padding: 80px;
     min-height: 100vh;
 }
 .row{

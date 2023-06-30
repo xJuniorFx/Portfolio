@@ -4,9 +4,6 @@ import menu from '../../assets/img/bx-menu.svg'
 import classNames from 'classnames';
 import { useState, useEffect } from 'react';
 
-
-
-
  const NavBar = ()=>{
     const [activeLink, setActiveLink] = useState<string>('home');
 
@@ -18,7 +15,7 @@ import { useState, useEffect } from 'react';
             
             <a href='#home' className={styles.navbarLogo} onClick={()=> onUpdateActiveLink('home')}><img className={styles.logo} src={logo} alt='Logo'/></a>
             
-            <img src={menu} id={styles.menu}/>
+            <img alt='Menu Icon' src={menu} id={styles.menu}/>
             
             <nav className={classNames([styles.navbar])}>
                 <a 

@@ -5,8 +5,7 @@
     }
 }
 section{
-    min-height: 105vh;
-    padding: 10rem 7%;
+    min-height: 101vh;
 }
 .home:before{
     content: '';
@@ -15,23 +14,24 @@ section{
     right: 0;
     width: 100%;
     height: 100%;
-    background: #000000;
+    background: $--bg-color;
     animation: showRight 1s ease forwards;
     z-index: 100;
 }
 .home{
+    position: relative;
     display: flex;
     height: 100vh;
-    background: url('../../assets/img/pxfuel.jpg') no-repeat;
+    background: $--bg-color;
     background-size: cover;
     background-position: center;
     align-items: center;
-    padding: 0 9% 0;
+    padding: 5rem 9% 0;
 }
 .content{
     max-width: 60rem;
 }
-/*.content h1::before{
+.content h1::before{
     content: '';
     position: absolute;
     top: 0;
@@ -41,14 +41,14 @@ section{
     background: $--bg-color;
     animation: showRight 1s ease forwards;
     animation-delay: .4s;
-}*/
+}
 .content h1{
     position: relative;
     font-size: 5.6rem;
     font-weight: 700;
     line-height: 1.3;
 }
-/*.content .animatedText::before{
+.content .animatedText::before{
     content: '';
     position: absolute;
     top: 0;
@@ -58,7 +58,7 @@ section{
     background: $--bg-color;
     animation: showRight 1s ease forwards;
     animation-delay: .7s;
-}*/
+}
 .content .animatedText{
     position: relative;
     width: 32.8rem;
@@ -69,7 +69,7 @@ section{
     color: transparent;
     -webkit-text-stroke: 1.5px $--main-color;
 }
-/*.content p::before{
+.content p::before{
     content: '';
     position: absolute;
     top: 0;
@@ -79,13 +79,13 @@ section{
     background: $--bg-color;
     animation: showRight 1s ease forwards;
     animation-delay: .9s;
-}*/
+}
 .content p{
     position: relative;
     font-size: 1.6rem;
     margin: 2rem 0 4rem;
 }
-/*.anchorBox::before{
+.anchorBox::before{
     content: '';
     position: absolute;
     top: 0;
@@ -96,7 +96,7 @@ section{
     animation: showRight 1s ease forwards;
     animation-delay: 1.2s;
     z-index: 2;
-}*/
+}
 .anchorBox{
     position: relative;
     display: flex;
@@ -119,7 +119,6 @@ section{
     font-weight: 600;
     color: $--bg-color;
     text-decoration: none;
-    letter-spacing: 1;
     z-index: 1;
     overflow: hidden;
     transition: 300ms;
@@ -145,7 +144,7 @@ section{
     transform: scaleX(1);
     
 }
-/*.socialNetwork::before{
+.socialNetwork::before{
     content: '';
     position: absolute;
     top: 0;
@@ -155,7 +154,7 @@ section{
     background: $--bg-color;
     animation: showRight 1s ease forwards;
     animation-delay: 1.9s;
-}*/
+}
 .socialNetwork{
     position: absolute;
     margin-top: 15px;
@@ -170,5 +169,37 @@ section{
     background: transparent;
     margin: 0 10px 0 0;
 }
+/* ============ Media Queries (SMALL DEVICES)============ */
 
+@media only screen and (max-width: 600px){
+    .content h1{
+        font-size: 4rem;
+    }
+    .anchorBox .anchor{
+        margin-right: 50px;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .home{
+        align-items: normal;
+        padding-top: 8rem;
+    }
+    .content {
+        width: 100%;
+    }
+    .content h1{
+        font-size: 3.2rem;
+    }
+    .content .Banner_animatedText{
+        font-size: 2.5rem;
+    }
+    .content p{
+        font-size: 1.5rem;
+    }
+    .anchorBox{
+        width: 100%;
+        margin-right: 50px;
+    }
+}
 
