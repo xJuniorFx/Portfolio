@@ -8,9 +8,8 @@
 .about__container{
    display: grid;
    grid-template-columns: 35% 50%;
-   gap: 15%;
-   width: $--container-width-lg;
    margin: 0 auto;
+   justify-content: space-around;
 
 }
 .about__me{
@@ -27,7 +26,7 @@
     display: none;
 }
 .about__content{
-    flex-basis: 60%;
+    
 }
 .title{
     display: flex;
@@ -56,14 +55,14 @@
 
 .technologies{
     display: flex;
-    justify-content: center;
-    margin-top: 10px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 10px;
 }
 .technologies img{
-    width: 40px;
-    height: 40px;
-    align-self: left;
-    padding-right: 10px;
+    width: 50px;
+    height: 50px;
+    
 }
 
 /* ============ Media Queries (MEDIUM DEVICES)============ */
@@ -96,8 +95,13 @@
     .about__content p {
         font-size: 1.5rem;
     }
-    .subTitle {
+    .subTitle h2{
         font-size: 3.2rem;
+    }
+    .technologies img{
+        width: 40px;
+        height: 40px;
+        
     }
 }
 
@@ -125,7 +129,17 @@
     .image__alternative{
         display: block;
     }
+    .technologies img{
+        width: 35px;
+        height: 35px;
+        
+    }
     
+}
+@media only screen and (max-width: 325px) {
+     .about__me{
+        margin: 11rem auto 0;
+     }
 }
 
 
