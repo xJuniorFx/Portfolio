@@ -15,7 +15,6 @@ import { useState, useEffect } from 'react';
             
             <a href='#home' className={styles.navbarLogo} onClick={()=> onUpdateActiveLink('home')}><img className={styles.logo} src={logo} alt='Logo'/></a>
             
-            <img alt='Menu Icon' src={menu} id={styles.menu}/>
             
             <nav className={classNames([styles.navbar])}>
                 <a 

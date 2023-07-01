@@ -61,8 +61,42 @@
     }
 }
 @media only screen and (max-width: 470px){
-    .header{
+    .navbarLogo{
         display: none;
     }
+    .navbar {
+        transition: 1.2s;
+        background-color: rgb(0, 0, 0, 0.3);
+        width: max-content;
+        padding: 0.7rem 1.7rem;
+        z-index: 2;
+        position: fixed;
+        left: 50%;
+        top: 4%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 0.8rem;
+        border-radius: 3rem;
+        
+    }
+    .navbar a{
+        background: transparent;
+        padding: 0.9rem;
+        border-radius: 50%;
+        display: flex;
+        color: $--text-color;
+        font-size: 1.1rem;
+    }
+    .navbar a:hover {
+    background: rgb(0, 0, 0, 0.6);
+    }
+    .navbar a.active{
+        background: $--main-color;
+        color: $--text-color;
+    }
 }
-
+@media only screen and (max-width: 322px){
+    .navbar {
+        top: 1%;
+    }
+}
