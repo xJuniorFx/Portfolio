@@ -26,7 +26,7 @@
     width: 100%;
     height: 100%;
     background: $--bg-color;
-    animation: showRight 1.2s ease forwards;
+    animation: showRight 1.8s ease forwards;
     z-index: 2;
 }
 .navbarLogo{
@@ -35,6 +35,19 @@
 .logo{
     width: 150px;
     height: 75px;
+}
+.navbar::before{
+    
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: $--bg-color;
+    animation: showRight 1s ease forwards;
+    z-index: 2;
+    
 }
 .navbar a {
     font-size: 1.7rem;
@@ -45,7 +58,7 @@
 }
 
 .navbar a:hover, .navbar a.active {
-    color: $--main-color;
+    color: $--color-primary;
 }
 
 #menu{
@@ -53,6 +66,7 @@
     cursor: pointer;
     display: none;
 }
+
 /* ============ Media Queries (MEDIUM DEVICES)============ */
 
 @media only screen and (max-width: 600px){
@@ -60,6 +74,7 @@
         margin-left: 1rem;
     }
 }
+/* ============ Media Queries (SMALL DEVICES)============ */
 @media only screen and (max-width: 470px){
     .navbarLogo{
         display: none;
@@ -91,7 +106,7 @@
     background: rgb(0, 0, 0, 0.6);
     }
     .navbar a.active{
-        background: $--main-color;
+        background: $--color-primary;
         color: $--text-color;
     }
 }

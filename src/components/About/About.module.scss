@@ -1,5 +1,6 @@
 @import '../../styles/variaveis';
 
+
 .about{
     padding-top: 8rem;
     background-color: $--bg-color;
@@ -34,7 +35,7 @@
     font-size: 5rem;
 }
 .title h1 span{
-    color: $--main-color;
+    color: $--color-primary;
 }
 .about__content p{
     font-weight: 400;
