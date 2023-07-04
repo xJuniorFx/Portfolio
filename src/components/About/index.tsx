@@ -34,9 +34,7 @@ const About = () => {
                     <div className={styles.subTitle}>
                         <h2>Technologies</h2>
                     </div>
-                    
-                    <div className={styles.technologies}>
-                        
+                    <div className={styles.technologies}>   
                         <img alt='Icon React' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
                         <img alt='Icon Git' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
                         <img alt='Icon Node.js' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
@@ -45,10 +43,8 @@ const About = () => {
                         <img alt='Icon CSS' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />                       
                         <img alt='Icon SASS' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />                       
                         <img alt='Icon Javascript'src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />                       
-                        <img alt='Icon Typescript' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />         
-                        
+                        <img alt='Icon Typescript' src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />          
                     </div>
-                    
                 </div>
             </div>
             

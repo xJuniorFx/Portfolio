@@ -87,8 +87,8 @@ const Contact = () =>{
                         <p>juniorfernandessilva1@gmail.com</p>
                         <p>(48) 98847-5105</p>
                         <div className={styles.socialNetwork}>
-                        <a href='https://github.com/xJuniorFx' target="_blank"><img className={styles.network} src={github}></img></a>
-                        <a href='https://www.linkedin.com/in/juniorfs/' target="_blank"><img className={styles.network} src={linkedin} ></img></a>
+                            <a href='https://github.com/xJuniorFx' target="_blank" rel="noreferrer"><img className={styles.network} alt='Github Icon' src={github}></img></a>
+                            <a href='https://www.linkedin.com/in/juniorfs/' target="_blank" rel="noreferrer"><img className={styles.network} alt='Linkedin Icon' src={linkedin} ></img></a>
                         </div>
                     </div>
                     <div className={styles.form_field}>
