@@ -1,7 +1,7 @@
 @import '../../styles/variaveis';
 
 .projects{
-    background: $--bg-color;
+    background: #17182b;
     padding: 8rem 80px;
 }
 
@@ -14,8 +14,8 @@
 .title span{
     color: $--color-primary;
 }
-.container{
+.projects_container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem;
+    grid-gap: 2.5rem;
 }

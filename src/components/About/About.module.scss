@@ -20,10 +20,11 @@
     display: grid;
     place-items: center;
 }
-.about__me_image{ 
-    border-radius: 2rem;
+.image{ 
+    border-radius: 3rem;
 }
 .image__alternative{
+    border-radius: 3rem;
     display: none;
 }
 .title{
@@ -42,9 +43,6 @@
     font-size: 1.7rem;
     padding-bottom: 2rem;
 }
-.knowledge{
-    
-}
 .subTitle{
     display: flex;
     justify-content: center;
@@ -58,9 +56,9 @@
 }
 .technologies{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
-    align-items: center;
+    gap: 2rem;
     margin-bottom: 2rem;
 }
 .technologies img{
@@ -94,7 +92,7 @@
         width: $--container-width-sm;
     }
     .about__me{
-        margin: 7rem auto 0;
+        margin: 3rem auto 0;
     }
     .title h1{
         font-size: 3.2rem;
@@ -118,9 +116,6 @@
     }
     .about__container {
         width: 100%;
-    }
-    .about__me{
-        margin: 10rem auto 0;
     }
     .about__content{
         width: 100%;
@@ -146,15 +141,6 @@
     }
     
 }
-@media only screen and (max-width: 325px) {
-     .about__me{
-        margin: 11rem auto 0;
-     }
-}
-@media only screen and (max-width: 282px) {
-    .about__me{
-       margin: 14rem auto 0;
-    }
-}
+
 
 

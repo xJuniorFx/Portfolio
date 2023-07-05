@@ -1,8 +1,7 @@
 import styles from './NavBar.module.scss'
 import logo from '../../assets/img/logo.svg'
-import menu from '../../assets/img/bx-menu.svg'
 import classNames from 'classnames';
-import { useState, useEffect } from 'react';
+import { useState} from 'react';
 
  const NavBar = ()=>{
     const [activeLink, setActiveLink] = useState<string>('home');

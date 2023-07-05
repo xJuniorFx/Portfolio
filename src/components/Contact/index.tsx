@@ -1,11 +1,23 @@
 import styles from './Contact.module.scss'
-import github from '../../assets/img/github.svg'
-import linkedin from '../../assets/img/linkedin.svg'
 import { useState, useEffect} from 'react';
 import emailjs from '@emailjs/browser'
 import classNames from 'classnames';
 
+
 const Contact = () =>{
+    
+    const info = [
+        {
+            "icon": "/assets/email.svg",
+            "title":"Email Address",
+            "description": "juniorfernandessilva1@gmail.com",
+        },
+        {
+            "icon": "/assets/whats.svg",
+            "title":"Phone Number",
+            "description": "(48) 98847-5105",
+        }
+    ]
 
     const formInitialsDetails = {
         firstName: '',
@@ -83,16 +95,23 @@ const Contact = () =>{
             
                 <div className={styles.row}>
                     <div className={styles.contact_info}>
-                        <h1 className={styles.subTitle}>Contact <span>Me</span></h1>
-                        <p>juniorfernandessilva1@gmail.com</p>
-                        <p>(48) 98847-5105</p>
-                        <div className={styles.socialNetwork}>
-                            <a href='https://github.com/xJuniorFx' target="_blank" rel="noreferrer"><img className={styles.network} alt='Github Icon' src={github}></img></a>
-                            <a href='https://www.linkedin.com/in/juniorfs/' target="_blank" rel="noreferrer"><img className={styles.network} alt='Linkedin Icon' src={linkedin} ></img></a>
-                        </div>
+                        <h1 className={styles.Title}>Contact <span>Me</span></h1>
+                        
+                        {info.map(info => (  
+                            <article className={styles.contact_box}>
+                                <img className={styles.icon} src={info.icon} alt='Email Icon'/>
+                                <h1 className={styles.subtitle}>
+                                    {info.title}
+                                </h1>
+                                <h2 className={styles.description}>
+                                    {info.description}
+                                </h2>
+                            </article>
+                        ))}
+
                     </div>
                     <div className={styles.form_field}>
-                        <h2 className={styles.subTitle}>Get in <span>Touch</span></h2>
+                        <h2 className={styles.Title}>Get in <span>Touch</span></h2>
                         <form onSubmit={handleSubmit}>
                             <div className={styles.form_complements}>
                                 <div>
@@ -156,8 +175,6 @@ const Contact = () =>{
                                     <p className={classNames({[styles.danger]: status.success === 'false', [styles.success]: status.success === 'true'})}>{status.message}</p>
                                 }
                             </div>
-                            
-                           
                         </form>
                     </div>
                 </div>
