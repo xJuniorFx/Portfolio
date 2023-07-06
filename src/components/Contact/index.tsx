@@ -2,18 +2,20 @@ import styles from './Contact.module.scss'
 import { useState, useEffect} from 'react';
 import emailjs from '@emailjs/browser'
 import classNames from 'classnames';
+import email from '../../assets/img/email.svg'
+import whats from '../../assets/img/whats.svg'
 
 
 const Contact = () =>{
     
     const info = [
         {
-            "icon": "../../assets/img/email.svg",
+            "icon": email,
             "title":"Email Address",
             "description": "juniorfernandessilva1@gmail.com",
         },
         {
-            "icon": "../../assets/img/whats.svg",
+            "icon": whats,
             "title":"Phone Number",
             "description": "(48) 98847-5105",
         }
