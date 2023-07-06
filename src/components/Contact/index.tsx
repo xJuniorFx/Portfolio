@@ -8,12 +8,12 @@ const Contact = () =>{
     
     const info = [
         {
-            "icon": "/assets/email.svg",
+            "icon": "../../assets/img/email.svg",
             "title":"Email Address",
             "description": "juniorfernandessilva1@gmail.com",
         },
         {
-            "icon": "/assets/whats.svg",
+            "icon": "../../assets/img/whats.svg",
             "title":"Phone Number",
             "description": "(48) 98847-5105",
         }
