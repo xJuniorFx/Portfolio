@@ -12,7 +12,7 @@ interface CardProps{
 
 const Card = (props: CardProps)=>{
 
-    const {title, description, imgUrl, linkGit, linkProject} = props;
+    const {title, description, imgUrl, linkGit} = props;
 
     return(
         
@@ -26,7 +26,7 @@ const Card = (props: CardProps)=>{
                     </div>
                     <div className={styles.link_section}>
                         <a className={styles.link} target="_blank" href={linkGit} rel="noreferrer"><img src={gitHub} alt="Githubb Icon" /></a>
-                        <a className={styles.link} target="_blank" href='#' rel="noreferrer"><img src={link} alt='External link'/></a> 
+                        <a className={styles.link} target="_blank" href={linkGit} rel="noreferrer"><img src={link} alt='External link'/></a> 
                     </div>                
                 </div>
             </div>
