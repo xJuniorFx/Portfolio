@@ -95,10 +95,10 @@ const Contact = () =>{
             
                 <div className={styles.row}>
                     <div className={styles.contact_info}>
-                        <h1 className={styles.Title}>Contact <span>Me</span></h1>
+                        <h1 className={styles.title}>Contact <span>Me</span></h1>
                         
-                        {info.map(info => (  
-                            <article className={styles.contact_box}>
+                        {info.map((info, index) => (  
+                            <article key={index} className={styles.contact_box}>
                                 <img className={styles.icon} src={info.icon} alt='Email Icon'/>
                                 <h1 className={styles.subtitle}>
                                     {info.title}
@@ -111,7 +111,7 @@ const Contact = () =>{
 
                     </div>
                     <div className={styles.form_field}>
-                        <h2 className={styles.Title}>Get in <span>Touch</span></h2>
+                        <h2 className={styles.title}>Get in <span>Touch</span></h2>
                         <form onSubmit={handleSubmit}>
                             <div className={styles.form_complements}>
                                 <div>

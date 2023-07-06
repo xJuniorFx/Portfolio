@@ -199,6 +199,7 @@ section{
 
 
 /* ============ Media Queries (BIG DEVICES)============ */
+
 @media only screen and (max-width: 1400px){
     .right_content img {
         height: 80%;
@@ -267,10 +268,6 @@ section{
     p{
         margin-top: 10px;
     }
-}
-@media only screen and (max-height: 375px){
-
-    
 }
 @media only screen and (max-width: 282px){
     .content{

@@ -1,10 +1,20 @@
 @import '../../styles/variaveis';
 
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
 .contact{
     background: $--bg-color;
     background-size: cover;
     background-position: center;
-    padding: 80px;
+    padding: 6rem;
     min-height: 100vh;
 }
 .row{
@@ -12,13 +22,13 @@
     grid-template-columns: 30% 58%;
     gap: 12%;
 }
-.Title{
+.title{
     font-weight: 600;
     font-size: 5rem;
     border-top: 10px;
     align-self: center;
 }
-.Title span{
+.title span{
     color: $--color-primary;
 }
 .contact_info{
@@ -107,6 +117,7 @@
     margin-top: 2rem;
     font-size: 1.8rem;
     font-weight: 600;
+    animation: fadeOut 3s ease-in-out forwards;
 }
 .danger {
     color: #fc0404;
@@ -117,4 +128,64 @@
     margin-top: 2rem;
     font-size: 1.8rem;
     font-weight: 600;
+    animation: fadeOut 3s ease-in-out forwards;
+}
+
+/* ============ Media Queries (BIG DEVICES)============ */
+
+@media only screen and (max-width: 1024px){
+    .row{
+        grid-template-columns: 35% 53%;
+        gap: 12%;
+    }
+    .title{
+        font-size: 3.5rem;
+    }
+    .form_complements div {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .row{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3%;
+    }
+    .form_field{
+        display: grid;
+        justify-items: center;
+    }
+}
+
+/* ============ Media Queries (SMALL DEVICES)============ */
+
+@media only screen and (max-width: 425px){
+    .contact{
+        padding: 4rem;
+        gap: 2%;
+    }
+    .btn{
+        margin: 2rem 0;
+    }
+    .success{
+        display: block;
+    }
+    .danger{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .contact{
+        padding: 2rem;
+    }
+    .row{
+        gap: 2%;
+    }
+   .contact_box{
+    padding: 0;
+   }
+   .description{
+        margin-bottom: 1rem;
+   }
 }

@@ -13,10 +13,7 @@ const Projects = () => {
                     <Card key={project.title} {...project} />
                 ))}
             </div>
-            
-
         </section>
-    
     )
 }
 
