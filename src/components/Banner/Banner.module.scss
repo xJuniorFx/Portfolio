@@ -237,14 +237,18 @@ section{
         font-size: 4rem;
     }
     .content p{
-        margin: 1rem 0 ;
+        margin: 1.5rem 0 ;
     }
     .anchor_box .anchor{
-        margin-right: 10px;
+        margin-right: 1.5rem;
+        margin-top: 1rem;
     }
 }
 
 @media only screen and (max-width: 470px){
+    .content{
+        padding-top: 6rem;
+    }
     .content h1{
         font-size: 3.2rem;
     }
@@ -259,7 +263,7 @@ section{
         margin-right: 50px;
     }
 }
-@media only screen and (max-width: 420px){
+@media only screen and (max-width: 425px){
     .content{
         padding-top: 6rem;
         
