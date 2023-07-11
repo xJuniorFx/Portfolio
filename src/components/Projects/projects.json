@@ -1,26 +1,30 @@
 [
     {
-        "title": "Maintenance",
+        "title": "Aluroni",
         "description": "Update coming soon",
         "linkGit":"https://github.com/xJuniorFx?tab=repositories",
-        "linkProject":"In construction"
+        "linkProject":"https://xjuniorfx.github.io/Aluroni/",
+        "imgLink": "assets/img/Aluroni.png"
     },
     {
         "title": "Maintenance",
         "description": "Update coming soon",
         "linkGit":"https://github.com/xJuniorFx?tab=repositories",
-        "linkProject":"In construction"
+        "linkProject":"In construction",
+        "imgLink": "assets/img/maintenance.png"
     },
     {
         "title": "Maintenance",
         "description": "Update coming soon",
         "linkGit":"https://github.com/xJuniorFx?tab=repositories",
-        "linkProject":"In construction"
+        "linkProject":"In construction",
+        "imgLink": "assets/img/maintenance.png"
     },
     {
         "title": "Maintenance",
         "description": "Update coming soon",
         "linkGit":"https://github.com/xJuniorFx?tab=repositories",
-        "linkProject":"In construction"
+        "linkProject":"In construction",
+        "imgLink": "assets/img/maintenance.png"
     }
 ]
