@@ -19,6 +19,7 @@
 }
 .row{
     display: grid;
+    grid-template-columns: 35% 60%;
     gap: 5%;
 }
 .title{
@@ -50,7 +51,10 @@
 .icon{
     margin-bottom: 0.5rem;
 }
-
+.form_field{
+    display: grid;
+    justify-items: center;
+}
 .form_field .form_complements{
     display: flex;
     flex-wrap: wrap;
@@ -131,20 +135,11 @@
 }
 
 /* ============ Media Queries (BIG DEVICES)============ */
-@media only screen and (min-width: 1441px){
-    .row{
-        justify-items: center;
-    }
-    .form_field{
-        display: grid;
-        justify-items: center;
-    }
-}
 
-@media only screen and (max-width: 1099px){
+
+@media only screen and (max-width: 1024px){
     .row{
         grid-template-columns: auto;
-        gap: 5%;
     }
     .title{
         font-size: 3.5rem;
@@ -153,7 +148,6 @@
         width: 100%;
     }
 }
-
 @media only screen and (max-width: 768px){
     .row{
         grid-template-columns: repeat(1, 1fr);
