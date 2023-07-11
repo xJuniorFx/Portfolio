@@ -1,7 +1,7 @@
 [
     {
         "title": "Aluroni",
-        "description": "Update coming soon",
+        "description": "Aluroni é um projeto que desenvolvi para criar uma página de cardápio interativa. Onde os usuários podem filtrar e ordenar as opções para visualizar as refeições disponíveis.",
         "linkGit":"https://github.com/xJuniorFx/Aluroni",
         "linkProject":"https://xjuniorfx.github.io/Aluroni/",
         "imgLink": "assets/img/Aluroni.png"
