@@ -68,7 +68,20 @@
     
 }
 
-/* ============ Media Queries (MEDIUM DEVICES)============ */
+/* ============ Media Queries (BIG DEVICES)============ */
+
+@media only screen and (min-width: 1441px) {
+    .about__container{
+        grid-template-columns: auto;
+    }
+    .about__me{
+        aspect-ratio: 0;
+    }
+    .about__content{
+        padding: 0 25%;
+    }
+
+}
 
 @media only screen and (max-width: 1024px) {
     .about{
@@ -86,7 +99,7 @@
 
 }
 
-/* ============ Media Queries (SMALL DEVICES)============ */
+/* ============ Media Queries (MEDIUM DEVICES)============ */
 
 @media only screen and (max-width: 600px) {
     .about__container{
@@ -109,6 +122,8 @@
         height: 40px;
     }
 }
+
+/* ============ Media Queries (SMALL DEVICES)============ */
 
 @media only screen and (max-width: 425px) {
     .about{

@@ -19,8 +19,7 @@
 }
 .row{
     display: grid;
-    grid-template-columns: 30% 58%;
-    gap: 12%;
+    gap: 5%;
 }
 .title{
     font-weight: 600;
@@ -132,11 +131,20 @@
 }
 
 /* ============ Media Queries (BIG DEVICES)============ */
-
-@media only screen and (max-width: 1024px){
+@media only screen and (min-width: 1441px){
     .row{
-        grid-template-columns: 35% 53%;
-        gap: 12%;
+        justify-items: center;
+    }
+    .form_field{
+        display: grid;
+        justify-items: center;
+    }
+}
+
+@media only screen and (max-width: 1099px){
+    .row{
+        grid-template-columns: auto;
+        gap: 5%;
     }
     .title{
         font-size: 3.5rem;
