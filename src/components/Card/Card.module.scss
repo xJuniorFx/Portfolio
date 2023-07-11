@@ -60,9 +60,23 @@
     gap: 2rem;
     
 }
+.link{
+    color: $--color-primary;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 11rem;
+    height: 5.5rem;
+    border: 0.2rem solid $--color-primary;
+    border-radius: 3rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    cursor: pointer;
+}
 /* ============ Media Queries (BIG DEVICES)============ */
 
-@media only screen and (max-width: 1180px){
+@media only screen and (max-width: 1270px){
     .project_box .project_image{
         width: 90%;
         height: 90%;
