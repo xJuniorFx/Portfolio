@@ -7,18 +7,11 @@
         "imgLink": "assets/img/Aluroni.png"
     },
     {
-        "title": "Maintenance",
-        "description": "Update coming soon",
+        "title": "Alura Studies",
+        "description": "Com Alura Studies, é um projeto que proporciona um controle visual claro das suas atividades e poderá gerenciar seu tempo de maneira mais eficaz.",
         "linkGit":"https://github.com/xJuniorFx?tab=repositories",
-        "linkProject":"#projects",
-        "imgLink": "assets/img/maintenance.png"
-    },
-    {
-        "title": "Maintenance",
-        "description": "Update coming soon",
-        "linkGit":"https://github.com/xJuniorFx?tab=repositories",
-        "linkProject":"#projects",
-        "imgLink": "assets/img/maintenance.png"
+        "linkProject":"https://xjuniorfx.github.io/AluraStudies/",
+        "imgLink": "assets/img/aluraStudies.png"
     },
     {
         "title": "Maintenance",
