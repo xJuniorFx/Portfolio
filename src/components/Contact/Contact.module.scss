@@ -15,7 +15,7 @@
     background-size: cover;
     background-position: center;
     padding: 6rem;
-    min-height: 100vh;
+    min-height: 280px;
 }
 .row{
     display: grid;
@@ -177,7 +177,7 @@
     }
 }
 
-@media only screen and (max-width: 320px){
+@media only screen and (max-width: 370px){
     .contact{
         padding: 2rem;
     }
@@ -189,5 +189,27 @@
    }
    .description{
         margin-bottom: 1rem;
+   }
+}
+@media only screen and (max-width: 320px){
+    .contact{
+        padding: 0.6rem;
+    }
+    .row{
+        gap: 2%;
+    }
+   .contact_box{
+    padding: 0;
+   }
+   .description{
+        font-size: 1.4rem;
+   }
+}
+@media only screen and (max-width: 280px){
+    .contact{
+        padding: 0.6rem;
+    }
+   .description{
+        font-size: 1.4rem;
    }
 }
