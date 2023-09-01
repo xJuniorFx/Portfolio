@@ -10,20 +10,19 @@ interface Project {
   linkProject: string;
   imgLink: string;
 }
-
 const projectData: Project[] = [
   {
-    title: "Gerícht Restaurant",
+    title: "Gericht Restaurant",
     description:
-      "Gerícht Restaurant é um projeto que desenvolvi para apresentar um restaurante. Ele oferece uma interface elegante e amigável para que os clientes possam explorar o menu, conhecer as especialidades do restaurante e sentir a sua atmosfera.",
-    linkGit: "https://github.com/xJuniorFx/Gericht-Restaurant",
+      "Gericht Restaurant is a project that provides an elegant and user-friendly interface to explore, learn about the restaurant and get a taste of its ambiance.",
+    linkGit: "https://github.com/xJuniorFx/Gericht-Restaurant/",
     linkProject: "https://xjuniorfx.github.io/Gericht-Restaurant/",
     imgLink: gericht,
   },
   {
     title: "Aluroni",
     description:
-      "Aluroni é um projeto que desenvolvi para criar uma página de cardápio interativa. Onde os usuários podem filtrar e ordenar as opções para visualizar as refeições disponíveis.",
+      "Aluroni is a project I developed to create an interactive menu page. Users can filter and sort options to view available meals.",
     linkGit: "https://github.com/xJuniorFx/Aluroni",
     linkProject: "https://xjuniorfx.github.io/Aluroni/",
     imgLink: aluroni,
@@ -31,7 +30,7 @@ const projectData: Project[] = [
   {
     title: "Alura Studies",
     description:
-      "Alura Studies é um projeto que proporciona um controle visual claro das suas atividades e poderá gerenciar seu tempo de maneira mais eficaz.",
+      "Alura Studies is a project that provides a clear visual overview of your tasks, helping you manage your time more effectively.",
     linkGit: "https://github.com/xJuniorFx/AluraStudies",
     linkProject: "https://xjuniorfx.github.io/AluraStudies/",
     imgLink: studies,
