@@ -36,18 +36,25 @@ const Contact = () => {
   const [status, setStatus] = useState(initialStatus);
   const [showMessage, setShowMessage] = useState(false);
 
-  const onFormUpdate = (category: string, value: string) => {
-    setFormDetails({
-      ...formDetails,
-      [category]: value,
-    });
+  const phoneMask = (value: string) => {
+    if (!value) return "";
+    value = value.replace(/\D/g, "");
+    value = value.replace(/(\d{2})(\d)/, "($1) $2");
+    value = value.replace(/(\d)(\d{4})$/, "$1-$2");
+    return value;
   };
 
-  /*
-    template_1dhcvv4
-    service_89fjnr5
-    0XQxzgMxCTTqO6Jrb
-    */
+  const onFormUpdate = (category: string, value: string) => {
+    let updatedValue = value;
+    if (category === "phone") {
+      updatedValue = phoneMask(value);
+    }
+
+    setFormDetails({
+      ...formDetails,
+      [category]: updatedValue,
+    });
+  };
 
   const handleSubmit = (event: any) => {
     event.preventDefault();
@@ -58,7 +65,7 @@ const Contact = () => {
         "service_89fjnr5",
         "template_1dhcvv4",
         {
-          from_name: formDetails.firstName + formDetails.lastName,
+          from_name: formDetails.firstName + "" + formDetails.lastName,
           to_name: "Junior F",
           from_email: formDetails.email,
           to_email: "juniorfernandessilva1@gmail.com",
@@ -159,8 +166,11 @@ const Contact = () => {
                   type="tel"
                   value={formDetails.phone}
                   placeholder="(22) 55555-4444"
-                  pattern="[0-9]{2} [0-9]{5}-[0-9]{4}"
-                  onChange={(e) => onFormUpdate("phone", e.target.value)}
+                  pattern="\(\d{2}\) \d{5}-\d{4}"
+                  maxLength={15}
+                  onChange={(e) => {
+                    onFormUpdate("phone", e.target.value);
+                  }}
                   required
                 />
               </div>
