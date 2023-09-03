@@ -1,6 +1,9 @@
 import aluroni from "../../assets/img/Aluroni.png";
 import studies from "../../assets/img/aluraStudies.png";
 import gericht from "../../assets/img/gericht-rest.png";
+import gerichtMobile from "../../assets/img/gerichtMobile.png";
+import aluroniMobile from "../../assets/img/aluroniMobile.png";
+import studiesMobile from "../../assets/img/StudiesMobile.png";
 import maintenance from "../../assets/img/maintenance.png";
 
 interface Project {
@@ -9,6 +12,7 @@ interface Project {
   linkGit: string;
   linkProject: string;
   imgLink: string;
+  imgLinkMobile: string;
 }
 const projectData: Project[] = [
   {
@@ -18,6 +22,7 @@ const projectData: Project[] = [
     linkGit: "https://github.com/xJuniorFx/Gericht-Restaurant/",
     linkProject: "https://xjuniorfx.github.io/Gericht-Restaurant/",
     imgLink: gericht,
+    imgLinkMobile: gerichtMobile,
   },
   {
     title: "Aluroni",
@@ -26,6 +31,7 @@ const projectData: Project[] = [
     linkGit: "https://github.com/xJuniorFx/Aluroni",
     linkProject: "https://xjuniorfx.github.io/Aluroni/",
     imgLink: aluroni,
+    imgLinkMobile: aluroniMobile,
   },
   {
     title: "Alura Studies",
@@ -34,6 +40,7 @@ const projectData: Project[] = [
     linkGit: "https://github.com/xJuniorFx/AluraStudies",
     linkProject: "https://xjuniorfx.github.io/AluraStudies/",
     imgLink: studies,
+    imgLinkMobile: studiesMobile,
   },
   {
     title: "Maintenance",
@@ -41,6 +48,7 @@ const projectData: Project[] = [
     linkGit: "https://github.com/xJuniorFx?tab=repositories",
     linkProject: "#projects",
     imgLink: maintenance,
+    imgLinkMobile: maintenance,
   },
 ];
 
