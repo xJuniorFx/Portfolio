@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Card from "../Card";
 import styles from "./Projects.module.scss";
 import projectData from "./ProjectsData";
-import ErrorBoundary from "./ErrorBoundary";
+import ErrorBoundary from "../ErrorBoundary/ErrorBoundary";
 
 const Projects = () => {
   const [deviceType, setDeviceType] = useState("desktop");
