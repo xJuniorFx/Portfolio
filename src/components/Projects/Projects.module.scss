@@ -1,56 +1,56 @@
-@import '../../styles/variaveis';
+@import "../../styles/variaveis";
 
-.projects{
-    background: #17182b;
-    padding: 6rem;
+.projects {
+  background: #17182b;
+  padding: 6rem;
 }
 
-.title{
-    font-weight: 600;
-    font-size: 5.5rem;
-    text-align: center;
-    margin-bottom: 20px;
+.title {
+  font-weight: 600;
+  font-size: 5.5rem;
+  text-align: center;
+  margin-bottom: 20px;
 }
-.title span{
-    color: $--color-primary;
+.title span {
+  color: $--color-primary;
 }
-.projects_container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2.5rem;
+.projects_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2.5rem;
 }
 /* ============ Media Queries (BIG DEVICES)============ */
 
-@media only screen and (max-width: 1024px){
-    .projects{
-        padding: 3rem;
-    }
-    .projects_container{
-        grid-template-columns: repeat(2, 1fr);
-    }
+@media only screen and (max-width: 1024px) {
+  .projects {
+    padding: 3rem;
+  }
+  .projects_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* ============ Media Queries (MEDIUM DEVICES)============ */
 
-@media only screen and (max-width: 768px){
-    .title{
-        font-size: 5rem;
-    }
+@media only screen and (max-width: 768px) {
+  .title {
+    font-size: 5rem;
+  }
 }
 
-@media only screen and (max-width: 600px){
-    .projects{
-        padding: 2rem;
-    }
-    .projects_container{
-        grid-template-columns: repeat(1, 1fr);
-    }
+@media only screen and (max-width: 600px) {
+  .projects {
+    padding: 2rem 1rem;
+  }
+  .projects_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 /* ============ Media Queries (SMALL DEVICES)============ */
 
-@media only screen and (max-width: 425px){
-    .title{
-        font-size: 3.5rem;
-    }
+@media only screen and (max-width: 425px) {
+  .title {
+    font-size: 3.5rem;
+  }
 }
