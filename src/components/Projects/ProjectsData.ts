@@ -26,7 +26,7 @@ const projectData: Project[] = [
 		imgLinkMobile: gerichtMobile,
 	},
 	{
-		title: 'Work Dashboard - in progress',
+		title: 'Work Dashboard',
 		description:
 			'Work Dashboard is an application in progress focused on task management and productivity in the workplace. The tool allows users to view, organize, and track tasks in a clear and intuitive way',
 		linkGit: 'https://github.com/xJuniorFx/WorkDashboard',
