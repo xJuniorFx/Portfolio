@@ -30,7 +30,7 @@ const projectData: Project[] = [
 		description:
 			'Work Dashboard is an application in progress focused on task management and productivity in the workplace. The tool allows users to view, organize, and track tasks in a clear and intuitive way',
 		linkGit: 'https://github.com/xJuniorFx/WorkDashboard',
-		linkProject: 'https://github.com/xJuniorFx/WorkDashboard',
+		linkProject: 'https://main.d1j1foeipdmbxm.amplifyapp.com/',
 		imgLink: workDashboard,
 		imgLinkMobile: workDashboard,
 	},
